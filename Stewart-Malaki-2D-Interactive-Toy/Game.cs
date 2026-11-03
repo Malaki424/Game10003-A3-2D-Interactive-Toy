@@ -46,7 +46,7 @@ namespace MohawkGame2D
             Draw.LineSize = 0;
             // Draw the body and eyes
             Draw.FillColor = skin;
-            Draw.Circle(x + 25, y - 70, 23);
+            Draw.Circle(x - 25, y - 70, 23);
             Draw.Circle(x + 25, y - 70, 23);
             Draw.Capsule(x - 50, y - 40, x + 50, y - 40, 25);
 
@@ -67,12 +67,12 @@ namespace MohawkGame2D
             Draw.FillColor = Color.White;
             Draw.Circle(x - 25, y - 70, 18);
             Draw.Circle(x + 25, y - 70, 18);
-            
+            Draw.FillColor = Color.Black;
             Draw.Circle(x - 25, y - 70, 10);
             Draw.Circle(x + 25, y - 70, 10);
 
             // Draw mouth
-            
+            Draw.LineSize = 3;
             Draw.LineColor = Color.Black;
             Draw.Line(x - 15, y - 40, x, y - 25);
             Draw.Line(x, y - 25, x + 15, y - 40);
